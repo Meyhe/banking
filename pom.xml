@@ -24,6 +24,8 @@
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <netflix-eureka.version>3.1.4</netflix-eureka.version>
         <spring-cloud-dependencies.version>2022.0.1</spring-cloud-dependencies.version>
+        <javaee-api.version>8.0.1</javaee-api.version>
+        <hibernate-validator.version>8.0.0.Final</hibernate-validator.version>
     </properties>
 
     <modules>
@@ -76,6 +78,16 @@
                 <version>${spring-cloud-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>${javaee-api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
